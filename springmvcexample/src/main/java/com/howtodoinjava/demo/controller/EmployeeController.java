@@ -21,4 +21,9 @@ public class EmployeeController
 		model.addAttribute("employees", manager.getAllEmployees());
 		return "employeesListDisplay !";
 	}
+	
+	@RequestMapping("/hello")
+	public String hello() {
+		return "wel come to spring mvc tomcat app";
+	}
 }
